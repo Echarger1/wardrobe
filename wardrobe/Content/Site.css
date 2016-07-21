@@ -27,5 +27,7 @@ textarea {
     color:#00efff;
 }
 jumbotron {
-    text-size-adjust: 200%
+    text-size-adjust: 200%;
+    background-color: white;
 }
+
