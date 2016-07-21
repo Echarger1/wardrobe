@@ -7,12 +7,12 @@
       <Diagram DiagramId="bb502f39a98443e39fea291d69d954f3" Name="Diagram1">
         <EntityTypeShape EntityType="WardrobeDBModel.Outfit" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="WardrobeDBModel.Type" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="WardrobeDBModel.WardrobeItem" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems" ManuallyRouted="false" />
-        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems1" ManuallyRouted="false" />
-        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems2" ManuallyRouted="false" />
-        <AssociationConnector Association="WardrobeDBModel.FK_WardrobeItems_Types" ManuallyRouted="false" />
-        <AssociationConnector Association="WardrobeDBModel.Accessories" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="WardrobeDBModel.WardrobeItem" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems" />
+        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems1" />
+        <AssociationConnector Association="WardrobeDBModel.FK_Outfits_WardrobeItems2" />
+        <AssociationConnector Association="WardrobeDBModel.FK_WardrobeItems_Types" />
+        <AssociationConnector Association="WardrobeDBModel.Accessories" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
