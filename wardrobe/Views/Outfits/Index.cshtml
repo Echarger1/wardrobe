@@ -20,26 +20,39 @@
         <th>
             @Html.DisplayNameFor(model => model.WardrobeItem2.Name)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Accessories)
+        </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.WardrobeItem.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.WardrobeItem1.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.WardrobeItem2.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WardrobeItem.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WardrobeItem1.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WardrobeItem2.Name)
+            </td>
+            <td></td>
+            @foreach (var accessory in item.Accessories)
+            {
+
+                @Html.DisplayFor(modelItem => accessory.Name)
+
+            }
+
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
+            </td>
+        </tr>
+    }
 
 </table>

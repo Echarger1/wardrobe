@@ -48,11 +48,14 @@ namespace wardrobe.Controllers
             var possibleShoes = from item in db.WardrobeItems
                                 where item.Type.TypeName == "Shoes"
                                 select item;
-
+            var possibleAccessories = from item in db.WardrobeItems
+                                where item.Type.TypeName == "Accessories"
+                                select item;
 
             ViewBag.TopID = new SelectList(possibleTops, "WardrobeItemID", "Name");
             ViewBag.BottomID = new SelectList(possibleBottoms, "WardrobeItemID", "Name");
             ViewBag.ShoeID = new SelectList(possibleShoes, "WardrobeItemID", "Name");
+            ViewBag.Accessories = new SelectList(possibleAccessories, "WardrobeItemID", "Name");
             return View();
         }
 
@@ -73,6 +76,7 @@ namespace wardrobe.Controllers
             ViewBag.TopID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.TopID);
             ViewBag.BottomID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.BottomID);
             ViewBag.ShoeID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.ShoeID);
+            ViewBag.Accessories = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.Accessories);
             return View(outfit);
         }
 
@@ -91,6 +95,7 @@ namespace wardrobe.Controllers
             ViewBag.TopID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.TopID);
             ViewBag.BottomID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.BottomID);
             ViewBag.ShoeID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.ShoeID);
+            ViewBag.Accessories = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.Accessories);
             return View(outfit);
         }
 
@@ -110,6 +115,7 @@ namespace wardrobe.Controllers
             ViewBag.TopID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.TopID);
             ViewBag.BottomID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.BottomID);
             ViewBag.ShoeID = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.ShoeID);
+            ViewBag.Accessories = new SelectList(db.WardrobeItems, "WardrobeItemID", "Name", outfit.Accessories);
             return View(outfit);
         }
 

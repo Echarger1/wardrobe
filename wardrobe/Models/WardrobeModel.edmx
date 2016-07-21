@@ -155,7 +155,7 @@
           <NavigationProperty Name="WardrobeItem" Relationship="WardrobeDBModel.FK_Outfits_WardrobeItems" FromRole="Outfit" ToRole="WardrobeItem" />
           <NavigationProperty Name="WardrobeItem1" Relationship="WardrobeDBModel.FK_Outfits_WardrobeItems1" FromRole="Outfit" ToRole="WardrobeItem" />
           <NavigationProperty Name="WardrobeItem2" Relationship="WardrobeDBModel.FK_Outfits_WardrobeItems2" FromRole="Outfit" ToRole="WardrobeItem" />
-          <NavigationProperty Name="WardrobeItems" Relationship="WardrobeDBModel.Accessories" FromRole="Outfit" ToRole="WardrobeItem" />
+          <NavigationProperty Name="Accessories" Relationship="WardrobeDBModel.Accessories" FromRole="Outfit" ToRole="WardrobeItem" />
           </EntityType>
         <EntityType Name="Type">
           <Key>

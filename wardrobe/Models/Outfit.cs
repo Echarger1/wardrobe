@@ -17,7 +17,7 @@ namespace wardrobe.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Outfit()
         {
-            this.WardrobeItems = new HashSet<WardrobeItem>();
+            this.Accessories = new HashSet<WardrobeItem>();
         }
     
         public int OutfitID { get; set; }
@@ -29,6 +29,6 @@ namespace wardrobe.Models
         public virtual WardrobeItem WardrobeItem1 { get; set; }
         public virtual WardrobeItem WardrobeItem2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<WardrobeItem> WardrobeItems { get; set; }
+        public virtual ICollection<WardrobeItem> Accessories { get; set; }
     }
 }
