@@ -153,10 +153,10 @@
           <Property Name="TopID" Type="Int32" Nullable="false" />
           <Property Name="BottomID" Type="Int32" Nullable="false" />
           <Property Name="ShoeID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="WardrobeItem" Relationship="Self.FK_Outfits_WardrobeItems" FromRole="Outfits" ToRole="WardrobeItems" />
-          <NavigationProperty Name="WardrobeItem1" Relationship="Self.FK_Outfits_WardrobeItems1" FromRole="Outfits" ToRole="WardrobeItems" />
-          <NavigationProperty Name="WardrobeItem2" Relationship="Self.FK_Outfits_WardrobeItems2" FromRole="Outfits" ToRole="WardrobeItems" />
-          <NavigationProperty Name="WardrobeItems" Relationship="Self.Accessories" FromRole="Outfits" ToRole="WardrobeItems" />
+          <NavigationProperty Name="Top" Relationship="Self.FK_Outfits_WardrobeItems" FromRole="Outfits" ToRole="WardrobeItems" />
+          <NavigationProperty Name="Bottom" Relationship="Self.FK_Outfits_WardrobeItems1" FromRole="Outfits" ToRole="WardrobeItems" />
+          <NavigationProperty Name="Shoes" Relationship="Self.FK_Outfits_WardrobeItems2" FromRole="Outfits" ToRole="WardrobeItems" />
+          <NavigationProperty Name="Accessories" Relationship="Self.Accessories" FromRole="Outfits" ToRole="WardrobeItems" />
         </EntityType>
         <EntityType Name="Type">
           <Key>
